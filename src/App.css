@@ -1,22 +1,171 @@
 .App {
   text-align: center;
+  background-image: url("./MerlinTask/asset2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-}
+.signupform {
+  margin: 10%;
+  border-radius: 10px;
+  border: 0 none;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".signupform-image .signupform-box";
+  height: 60vh;
+}
+.signupform-image{
+  background-image: url('./MerlinTask/asset1.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+.signupform-image h1{
+  color: white;
+}
+.signupform-image p{
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.signupform-box {
+  /* position: relative; */
+  background: white;
+	border: 0 none;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+
+.image{
+  height: auto;
+  width: 100px;
+
+}
+.register{
+  margin: 10%;
+  text-align: left;
+}
+
+.div{
+  /* height:100px;
+  width:100px; */
+  border:5px solid black;
+}
+
+.h1{
+  width:30px;
+  margin-top:-10px;
+  margin-left:5px;
+  background:white;
+  font-size: 15px;
+  white-space: nowrap ;
+  padding-right: 50px;
+
+}
+.txtb{
+  border: 2px solid #adadad;
+  position: relative;
+  margin: 10px 0;
+}
+
+
+.signupform-box p{
+  background-color: white;
+  margin-bottom: -21px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 9;
+  padding: 0px;
+  border: 0px;
+  width: 70px;
+  color: #adadad;
+}
+
+.txtb input{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.button{
+  text-align: center;
+  background:#9900ff;
+  border-radius: 1000px;
+  box-shadow: 0 1px #444444;
+  padding: 8px 20px;
+  color:#ffffff;
+  display: inline-block;
+  font: normal bold 24px/1 "Calibri", sans-serif;
+  text-shadow: 1px 1px #000000;
+  margin-left: 50px;
+  width: 80%;
+}
+
+.google-btn {
+  margin: 25px;
+  width: 80%;
+  min-width: 184px;
+  max-width: 184px;
+  height: 42px;
+  background-color: #fcfcfc;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+  cursor: hand;
+  align-self: center;
+  user-select: none;
+  transition: all 400ms ease 0s;
+  display: flex;
+}
+.google-btn .google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  user-select: none
+}
+.google-btn .google-icon-svg {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+  user-select: none
+}
+.google-btn .btn-text {
+  float: right;
+  margin: 11px 14px 40px 40px;
+  color: #757575;
+  font-size: 14px;
+  letter-spacing: .2px;
+  font-family: Roboto;
+  user-select: none
+}
+.google-btn:hover {
+  box-shadow: 0 3px 8px rgba(117, 117, 117, .5);
+  user-select: none
+}
+.google-btn:active {
+  box-shadow: 0 1px 1px #757575;
+  background: #F8F8F8;
+  color: #fff;
+  user-select: none
 }
